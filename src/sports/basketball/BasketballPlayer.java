@@ -77,7 +77,7 @@ public class BasketballPlayer implements IPlayer <BasketballStats> {
    * @return the stats of a basketball player
    */
   @Override
-  public Object getStats() {
+  public BasketballStats getStats() {
 
     // return the stats instance variable
     return this.stats;

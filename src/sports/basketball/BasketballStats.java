@@ -3,7 +3,7 @@ package sports.basketball;
 import java.util.Objects;
 
 /**
- * Clas for a basketball stat.
+ * Class for a basketball stat.
  */
 public class BasketballStats {
   private double pointsPerGame;
@@ -27,7 +27,7 @@ public class BasketballStats {
   }
 
   /**
-   * Getter method for getting the total points per game
+   * Getter method for getting the total points per game.
    * @return the total points per game
    */
   public double getPointsPerGame() {
@@ -37,7 +37,7 @@ public class BasketballStats {
   }
 
   /**
-   * Getter method for getting the rebounds per game
+   * Getter method for getting the rebounds per game.
    * @return the rebounds per game
    */
   public double getReboundsPerGame() {

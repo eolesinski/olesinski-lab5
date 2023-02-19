@@ -70,9 +70,10 @@ public class Roster <T, R> {
     this.players.sort((Comparator<? super T>) new BasketballPlayerComparator());
 
     // use our comparator to sort
-    // the previous generic is using a wildcard ? basically stating the type can be any T or a super type of T
-    // this is Turkish Delights from Java "deep magic" - don't worry if you don't understand it - you can
-    // use this method safely without editing it or knowing how it works under the hood. Asland.
+    // the previous generic is using a wildcard ? basically stating the type can be any T
+    // or a super type of T this is Turkish Delights from Java "deep magic" - don't worry
+    // if you don't understand it - you can use this method safely without editing it or
+    // knowing how it works under the hood. Asland.
 
   }
 
@@ -81,10 +82,13 @@ public class Roster <T, R> {
 
     //R result =
 
+    return null;
 
-    // given a bi-function and a seed-value (initial value), combine all the values from each player
-    // into a single value. The value we're combining will be dependent on the bi-function passed in as a parameter
-    // T and R are "formal" parameters that may be bound to 2 different concrete types
+
+    // given a bi-function and a seed-value (initial value), combine all the values from
+    // each player into a single value. The value we're combining will be dependent on the
+    // bi-function passed in as a parameter T and R are "formal" parameters that may be bound
+    // to 2 different concrete types
 
   }
 

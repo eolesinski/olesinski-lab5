@@ -2,9 +2,9 @@ package sports;
 
 /**
  * Interface for a player.
- * @param <T>
+ * @param <T> generic
  */
-public interface IPlayer <T> {
+public interface IPlayer<T> {
 
   /**
    * Method for getting the name of a player.
@@ -25,7 +25,7 @@ public interface IPlayer <T> {
   double getHeight();
 
   /**
-   * Generic method for getting the stats of a player
+   * Generic method for getting the stats of a player.
    * @return the stats of a player
    * @param <T> the generic type
    */

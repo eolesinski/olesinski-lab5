@@ -7,7 +7,15 @@ import sports.basketball.BasketballPlayer;
 import sports.basketball.BasketballStats;
 import sports.IPlayer;
 
+/**
+ * Class for testing the player classes.
+ */
 public class Main {
+
+  /**
+   * Class for testing the player classes.
+   * @param args the arguments
+   */
   public static void main(String[] args) {
     IPlayer kobe;
     IPlayer shaq;
