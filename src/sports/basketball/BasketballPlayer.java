@@ -107,6 +107,11 @@ public class BasketballPlayer implements IPlayer<BasketballStats> {
 
   }
 
+  /**
+   * Equals method for comparing two basketball players.
+   * @param other the other basketball player
+   * @return true or false depending on whether they are the same or not
+   */
   @Override
   public boolean equals(Object other) {
 

@@ -81,8 +81,8 @@ public class Roster<T, R> {
    * Bi-function for combining individual stats a team has into one value.
    * @param combiner the combining function
    * @param seedValue the seed value
-   * @return the team stats
    * @param <R> the parameter
+   * @return the team stats
    */
   // Bi-Function to combine individual stats the dream team has, into one value
   public <R> R fold(BiFunction<T, R, R> combiner, R seedValue) {
