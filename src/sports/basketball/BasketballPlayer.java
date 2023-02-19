@@ -103,7 +103,7 @@ public class BasketballPlayer implements IPlayer<BasketballStats> {
   public String toString() {
 
     // return a string representation of a basketball player
-    return this.name + " (Age:" + this.age + ", Height:" + this.height + ")";
+    return this.name + " (Age:" + this.age + ", Height:" + this.height + ")" + this.stats.getPointsPerGame();
 
   }
 

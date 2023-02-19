@@ -56,9 +56,8 @@ public class Roster<T, R> {
    */
   public void addPlayer(T player) {
 
-    System.out.println("test");
-
     // add the new player to our list of players
+    this.players.add(player);
 
   }
 
@@ -85,7 +84,14 @@ public class Roster<T, R> {
    * @return the team stats
    */
   // Bi-Function to combine individual stats the dream team has, into one value
+
+  // first parameter denotes the type of the first argument, the second parameter
+  // represents the type of the second argument, and the third represents the return type
   public <R> R fold(BiFunction<T, R, R> combiner, R seedValue) {
+
+    //  here we fold/reduce in order to combine an initial value to get a combined form
+    // Note: this is of the form List => value
+
 
     //R result =
 
