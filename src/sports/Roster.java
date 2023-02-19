@@ -78,7 +78,7 @@ public class Roster<T, R> {
   }
 
   /**
-   * Bi-function for combining individual stats a team has into one value
+   * Bi-function for combining individual stats a team has into one value.
    * @param combiner the combining function
    * @param seedValue the seed value
    * @return the team stats

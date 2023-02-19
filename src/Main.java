@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiFunction;
 
+import sports.IPlayer;
 import sports.Roster;
 import sports.basketball.BasketballPlayer;
 import sports.basketball.BasketballStats;
-import sports.IPlayer;
 
 /**
  * Class for testing the player classes.
@@ -81,10 +81,10 @@ public class Main {
     // print the new roster
     System.out.println("New Roster: " + roster.getPlayers());
 
-    BiFunction<BasketballPlayer, Double, Double > assists =
+    BiFunction<BasketballPlayer, Double, Double> assists =
             (player, total) -> player.getStats().getAssistsPerGame() + total;
 
-    BiFunction<BasketballPlayer, Double, Double > points =
+    BiFunction<BasketballPlayer, Double, Double> points =
             (player, total) -> player.getStats().getPointsPerGame() + total;
 
     System.out.println("Total Team Assists for the season: " + roster.fold(assists, 0.0));
