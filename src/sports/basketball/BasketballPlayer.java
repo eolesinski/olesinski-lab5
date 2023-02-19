@@ -107,4 +107,34 @@ public class BasketballPlayer implements IPlayer<BasketballStats> {
 
   }
 
+  @Override
+  public boolean equals(Object other) {
+
+    // identity check (if it is the same object then they are equal)
+    if (this == other) {
+
+      return true;
+    }
+
+    // see if the classes are the same
+    if (this.getClass() != other.getClass()) {
+
+      // if they are not the same class return false
+      return false;
+    }
+
+    // we need to do an explicit downcast for attribute check
+    BasketballPlayer b = (BasketballPlayer) other;
+
+    // check each of the attribute values to see if they are equal to each other or not
+    if (this.age == b.age) {
+
+      return true;
+    }
+
+    // if each of these fail then it is false
+    return false;
+
+  }
+
 }
