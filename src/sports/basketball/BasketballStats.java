@@ -41,27 +41,69 @@ public class BasketballStats {
    * @return the rebounds per game
    */
   public double getReboundsPerGame() {
+
     return this.reboundsPerGame;
+
   }
 
+  /**
+   * Getter method for returning the total assists per game.
+   * @return the assists per game
+   */
   public double getAssistsPerGame() {
+
+    // return the assists instance variable
     return this.assistsPerGame;
+
   }
 
+  /**
+   * Equals method.
+   * @param other the other object
+   * @return true or false depending on whether the two objects are equal or not
+   */
   public boolean equals(Object other) {
-    if(this == other) return true;
-    if(this.getClass() != other.getClass()) return false;
+
+    // check to see if the two objects are equal
+    if (this == other) {
+
+      // if they are equal return true
+      return true;
+
+    }
+
+    // check to see if the two objects are not equal
+    if (this.getClass() != other.getClass()) {
+
+      // if they are not equal return false
+      return false;
+
+    }
+
+    // create a new basketball stats object
     BasketballStats o = (BasketballStats) other;
-    if(this.assistsPerGame == o.assistsPerGame
+
+
+    if (this.assistsPerGame == o.assistsPerGame
             && this.reboundsPerGame == o.reboundsPerGame
             && this.pointsPerGame == o.pointsPerGame) {
+
       return true;
+
     }
+
     return false;
+
   }
 
+  /**
+   * Hashcode method.
+   * @return the hashcode
+   */
   public int hashCode() {
+
     return Objects.hash(this.assistsPerGame, this.reboundsPerGame, this.pointsPerGame);
+
   }
 
 }
