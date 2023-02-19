@@ -43,8 +43,7 @@ public class BasketballPlayer implements IPlayer<BasketballStats> {
   public BasketballPlayer(BasketballPlayer otherPlayer) {
 
     // create another player
-    this(otherPlayer.name, otherPlayer.age, otherPlayer.height,
-            new BasketballStats(1, 2, 1));
+    this(otherPlayer.name, otherPlayer.age, otherPlayer.height, otherPlayer.stats);
 
   }
 

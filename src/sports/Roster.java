@@ -93,10 +93,13 @@ public class Roster<T, R> {
     // Note: this is of the form List => value
 
 
-    R result = combiner.apply(this.players.get(0), seedValue);
-    combiner.apply(this.players.get(1), seedValue);
+    for (int i = 0; i < players.size(); i++) {
 
-    return result;
+      seedValue = combiner.apply(this.players.get(i), seedValue);
+
+    }
+
+    return seedValue;
 
 
     // given a bi-function and a seed-value (initial value), combine all the values from
