@@ -93,15 +93,25 @@ public class Roster<T, R> {
     // Note: this is of the form List => value
 
 
-    //R result =
+    R result = combiner.apply(this.players.get(0), seedValue);
+    combiner.apply(this.players.get(1), seedValue);
 
-    return null;
+    return result;
 
 
     // given a bi-function and a seed-value (initial value), combine all the values from
     // each player into a single value. The value we're combining will be dependent on the
     // bi-function passed in as a parameter T and R are "formal" parameters that may be bound
     // to 2 different concrete types
+
+    /*
+
+    BiFunction<BasketballPlayer, Double, Double> assists =
+            (player, total) -> player.getStats().getAssistsPerGame() + total;
+
+    System.out.println("Total Team Assists for the season: " + roster.fold(assists, 0.0));
+
+     */
 
   }
 
