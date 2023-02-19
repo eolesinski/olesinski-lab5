@@ -7,7 +7,7 @@ import sports.IPlayer;
 /**
  * Class for creating a new instance of a basketball player.
  */
-public class BasketballPlayer implements IPlayer <BasketballStats> {
+public class BasketballPlayer implements IPlayer<BasketballStats> {
 
   // create teh instance variables
   private final String name;
@@ -33,6 +33,17 @@ public class BasketballPlayer implements IPlayer <BasketballStats> {
     this.age  = age;
     this.height = height;
     this.stats = stats;
+
+  }
+
+  /**
+   * A copy constructor for a basketball player.
+   * @param otherPlayer the other player
+   */
+  public BasketballPlayer(BasketballPlayer otherPlayer) {
+
+    // create another player
+    this(otherPlayer.name, otherPlayer.age, otherPlayer.height, otherPlayer.stats);
 
   }
 
@@ -81,6 +92,18 @@ public class BasketballPlayer implements IPlayer <BasketballStats> {
 
     // return the stats instance variable
     return this.stats;
+
+  }
+
+  /**
+   * Method for getting the string representation of a basketball player.
+   * @return the string representation of a basketball player
+   */
+  @Override
+  public String toString() {
+
+    // return a string representation of a basketball player
+    return this.name + " (Age:" + this.age + ", Height:" + this.height + ")";
 
   }
 
